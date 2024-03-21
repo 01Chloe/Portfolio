@@ -1,0 +1,16 @@
+@use "../src/assets/styles/_variables.scss" as vars;
+
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#root {
+  min-height: 100vh;
+  background-color: vars.$mainColor;
+  color: vars.$veryLightColor;
+  font-family: vars.$fontFam;
+  font-size: 16px;
+}

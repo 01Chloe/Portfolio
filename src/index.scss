@@ -14,3 +14,19 @@
   font-family: vars.$fontFam;
   font-size: 16px;
 }
+
+.app {
+  padding: 15px;
+}
+
+@media screen and (min-width: vars.$tablet) {
+  .app {
+    padding: 30px 60px;
+  }
+}
+
+@media screen and (min-width: vars.$desktop) {
+  .app {
+    padding: 30px 100px;
+  }
+}

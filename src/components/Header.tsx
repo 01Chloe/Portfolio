@@ -6,6 +6,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
     <header className={isOpen ? "open" : ""}>
+      <h1 className="sr-only">Allier Chloé - Portfolio</h1>
       <div className="menu" onClick={() => setIsOpen(!isOpen)}>
         <div className="menu-line"></div>
         <div className="menu-line"></div>

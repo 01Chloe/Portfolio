@@ -1,0 +1,36 @@
+@use "_variables.scss" as vars;
+
+.contact-btn {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 135px;
+  background-color: vars.$secondaryColor;
+  padding: 5px 15px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+  font-family: vars.$fontFam;
+  color: vars.$thirdColor;
+  text-decoration: none;
+  font-size: 1.125rem;
+  &:hover {
+    animation: contactBtnAnim 0.3s ease-out;
+  }
+}
+@keyframes contactBtnAnim {
+  30% {
+    rotate: 5deg;
+  }
+  50% {
+    rotate: -5deg;
+  }
+  70% {
+    rotate: 5deg;
+  }
+}
+
+@media screen and (min-width: vars.$tablet) {
+  .contact-btn {
+    font-size: 1.5rem;
+    width: 170px;
+  }
+}

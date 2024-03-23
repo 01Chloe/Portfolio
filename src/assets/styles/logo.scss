@@ -1,0 +1,38 @@
+@use "_mixins.scss" as mix;
+@use "_variables.scss" as vars;
+
+.logo-container {
+  @include mix.flexCenter;
+  filter: drop-shadow(3px 3px 5px vars.$thirdColor);
+  transition: transform 0.3s ease-out, filter 0.3s ease-out;
+  &:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(3px 3px 15px vars.$thirdColor);
+  }
+  .logo {
+    width: 35px;
+  }
+  span {
+    font-size: 0.75rem;
+    font-weight: 300;
+  }
+}
+
+@media screen and (min-width: vars.$tablet) {
+  .logo-container {
+    .logo {
+      width: 45px;
+    }
+    span {
+      font-size: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: vars.$desktop) {
+  .logo-container {
+    .logo {
+      width: 55px;
+    }
+  }
+}

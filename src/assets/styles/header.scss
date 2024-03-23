@@ -1,18 +1,27 @@
 @use "_variables.scss" as vars;
+@use "_mixins.scss" as mix;
 
 header {
   background-color: vars.$thirdColor;
-  border-radius: 20px;
-  padding: 15px;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+  @include mix.styledContainer;
+  .sr-only {
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+  }
   .menu {
     width: 30px;
     height: 25px;
     margin-left: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    @include mix.flexCenter;
     cursor: pointer;
     &-line {
       transition: transform 0.3s ease-out, opacity 0.3s ease-out,
@@ -27,11 +36,9 @@ header {
     }
   }
   .header-nav {
-    transition: max-height 0.3s ease-out, 0.3s ease-out, opacity 0.3s ease-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    transition: max-height 0.3s ease-out, transform 0.3s ease-out,
+      opacity 0.3s ease-out;
+    @include mix.flexCenter;
     transform: translateY(-20px);
     opacity: 0;
     visibility: hidden;

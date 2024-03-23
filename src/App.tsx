@@ -3,7 +3,7 @@ import Layout from "./layout/Layout"
 import Skills from "./pages/Skills"
 import Projects from "./pages/Projects"
 import Presentation from "./pages/Presentation"
-import Error404 from "./pages/Error404"
+import ErrorPage from "./pages/ErrorPage"
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Route path="/skills" element={<Skills />} />
         <Route path="/projects" element={<Projects />} />
       </Route>
-      <Route path="/*" element={<Error404 />} />
+      <Route path="/*" element={<ErrorPage />} />
     </Routes>
   )
 }

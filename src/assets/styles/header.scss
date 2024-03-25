@@ -50,9 +50,20 @@ header {
       &:not(:last-child) {
         margin-bottom: 10px;
       }
-      &:hover {
-        opacity: 0.5;
-        transition: opacity 0.2s ease-out;
+      &::after {
+        content: "";
+        width: 0;
+        height: 0.5px;
+        background-color: vars.$lightColor;
+        display: block;
+        margin: 0 auto;
+        transition: width 0.3s ease-out;
+      }
+      &:hover::after {
+        width: 100%;
+      }
+      &.active::after {
+        width: 100%;
       }
     }
   }

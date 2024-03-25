@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import { useState } from "react"
 import "../assets/styles/header.scss"
 
@@ -14,9 +14,24 @@ const Header = () => {
       </div>
 
       <nav className="header-nav">
-        <Link to="/">Présentation</Link>
-        <Link to="/skills">Compétences</Link>
-        <Link to="/projects">Projets</Link>
+        <NavLink
+          to="/"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Présentation
+        </NavLink>
+        <NavLink
+          to="/skills"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Compétences
+        </NavLink>
+        <NavLink
+          to="/projects"
+          className={({ isActive }) => (isActive ? "active" : "")}
+        >
+          Projets
+        </NavLink>
       </nav>
     </header>
   )

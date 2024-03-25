@@ -3,10 +3,14 @@ import ContactBtn from "../components/ContactBtn"
 import Logo from "../components/Logo"
 import likedinLogo from "../assets/img/linkedin.svg"
 import githubLogo from "../assets/img/github.svg"
+import Writer from "../components/Writer"
 
 const Presentation = () => {
   return (
     <main>
+      <section className="section-typewriter">
+        <Writer />
+      </section>
       <section className="section-about">
         <h2>Présentation</h2>
         <p>

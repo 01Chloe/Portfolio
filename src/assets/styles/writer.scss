@@ -1,0 +1,7 @@
+@use "_variables.scss" as vars;
+
+.typewriter {
+  font-family: vars.$titleFontFam;
+  font-size: 1.5rem;
+  text-align: center;
+}

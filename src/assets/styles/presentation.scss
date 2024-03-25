@@ -1,6 +1,11 @@
 @use "_variables.scss" as vars;
 @use "_mixins.scss" as mix;
 
+.section-typewriter {
+  background-color: darken(vars.$secondaryColor, 23%);
+  margin: 15px 0;
+  @include mix.styledContainer;
+}
 .section-about {
   background-color: vars.$mainColor;
   margin: 15px 0;
@@ -39,5 +44,8 @@
     p:nth-child(5) {
       display: block;
     }
+  }
+  .section-typewriter {
+    margin: 30px 0;
   }
 }

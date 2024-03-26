@@ -1,0 +1,16 @@
+@use "_variables.scss" as vars;
+@use "_mixins.scss" as mix;
+
+.skills-title {
+  @include mix.secondaryColorSection;
+  @include mix.styledContainer;
+  h2 {
+    @include mix.title;
+  }
+}
+
+@media screen and (min-width: vars.$desktop) {
+  .skills-title {
+    margin: 30px 0;
+  }
+}

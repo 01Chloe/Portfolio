@@ -1,0 +1,26 @@
+{
+  "languages": [
+    { "name": "React", "image": "./img/react.svg" },
+    { "name": "JavaScript", "image": "./img/js.svg" },
+    { "name": "TypeScript", "image": "./img/typescript.svg" },
+    { "name": "Redux", "image": "./img/redux.svg" },
+    { "name": "HTML", "image": "./img/html.svg" },
+    { "name": "CSS", "image": "./img/css.svg" },
+    { "name": "SASS", "image": "./img/sass.svg" },
+    { "name": "Tailwind", "image": "./img/tailwind.svg" },
+    { "name": "Bootstrap", "image": "./img/bootstrap.svg" }
+  ],
+  "versions": [
+    { "name": "Git", "image": "./img/git.svg" },
+    { "name": "GitHub", "image": "./img/github.svg" }
+  ],
+  "tools": [
+    { "name": "VSCode", "image": "./img/VSCode.svg" },
+    { "name": "Swagger", "image": "./img/swagger.svg" },
+    { "name": "Postman", "image": "./img/postman.svg" },
+    { "name": "NPM", "image": "./img/npm.svg" },
+    { "name": "Yarn", "image": "./img/yarn.svg" },
+    { "name": "Figma", "image": "./img/figma.svg" },
+    { "name": "cPanel", "image": "./img/cpanel.svg" }
+  ]
+}

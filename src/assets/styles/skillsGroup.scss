@@ -1,0 +1,35 @@
+@use "_variables.scss" as vars;
+@use "_mixins.scss" as mix;
+
+.section-skills {
+  margin: 15px 0;
+  @include mix.styledContainer;
+  background-color: vars.$mainColor;
+  h3 {
+    @include mix.title;
+    margin-bottom: 15px;
+  }
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(1fr);
+    gap: 15px;
+  }
+}
+
+@media screen and (min-width: vars.$tablet) {
+  .section-skills {
+    .skills-container {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media screen and (min-width: vars.$desktop) {
+  .section-skills {
+    margin: 30px 0;
+    .skills-container {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+}

@@ -2,8 +2,7 @@
 @use "_mixins.scss" as mix;
 
 .section-typewriter {
-  background-color: darken(vars.$secondaryColor, 23%);
-  margin: 15px 0;
+  @include mix.secondaryColorSection;
   @include mix.styledContainer;
 }
 .section-about {
@@ -11,8 +10,7 @@
   margin: 15px 0;
   @include mix.styledContainer;
   h2 {
-    font-family: vars.$titleFontFam;
-    font-weight: 300;
+    @include mix.title;
     margin-bottom: 15px;
   }
   p {
@@ -34,6 +32,11 @@
   a {
     color: vars.$veryLightColor;
     text-decoration: none;
+    transition: transform 0.3s ease-out, filter 0.3s ease-out;
+    &:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(3px 3px 15px vars.$thirdColor);
+    }
   }
 }
 @media screen and (min-width: vars.$tablet) {

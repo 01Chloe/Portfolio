@@ -1,8 +1,8 @@
 import "../assets/styles/presentation.scss"
 import ContactBtn from "../components/ContactBtn"
 import Logo from "../components/Logo"
-import likedinLogo from "../assets/img/linkedin.svg"
-import githubLogo from "../assets/img/github.svg"
+import likedinLogo from "../../public/img/linkedin.svg"
+import githubLogo from "../../public/img/github.svg"
 import Writer from "../components/Writer"
 
 const Presentation = () => {

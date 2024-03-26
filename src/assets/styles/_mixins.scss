@@ -1,3 +1,5 @@
+@use "_variables.scss" as vars;
+
 @mixin styledContainer {
   padding: 15px;
   border-radius: 20px;
@@ -9,4 +11,14 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+@mixin title {
+  font-family: vars.$titleFontFam;
+  font-weight: 300;
+}
+
+@mixin secondaryColorSection {
+  background-color: darken(vars.$secondaryColor, 23%);
+  margin: 15px 0;
 }

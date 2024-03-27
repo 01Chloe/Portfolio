@@ -16,6 +16,18 @@
   padding: 15px;
 }
 
+main {
+  transform: translateY(150px);
+  opacity: 0;
+  animation: pageAnim 0.5s ease-out forwards;
+}
+@keyframes pageAnim {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @media screen and (min-width: vars.$tablet) {
   #root {
     padding: 30px 60px;

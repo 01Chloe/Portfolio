@@ -17,18 +17,21 @@ const Header = () => {
         <NavLink
           to="/"
           className={({ isActive }) => (isActive ? "active" : "")}
+          onClick={() => setIsOpen(false)}
         >
           Présentation
         </NavLink>
         <NavLink
           to="/skills"
           className={({ isActive }) => (isActive ? "active" : "")}
+          onClick={() => setIsOpen(false)}
         >
           Compétences
         </NavLink>
         <NavLink
           to="/projects"
           className={({ isActive }) => (isActive ? "active" : "")}
+          onClick={() => setIsOpen(false)}
         >
           Projets
         </NavLink>

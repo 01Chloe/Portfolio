@@ -3,13 +3,13 @@ import "../assets/styles/errorPage.scss"
 
 const ErrorPage = () => {
   return (
-    <div className="error-page-container">
+    <main className="error-page-container">
       <p>Page introuvable</p>
       <p className="error-page-message">Erreur 404</p>
       <Link to="/" className="error-page-link">
         Retourner à la page d'accueil
       </Link>
-    </div>
+    </main>
   )
 }
 export default ErrorPage

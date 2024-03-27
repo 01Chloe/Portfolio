@@ -12,8 +12,23 @@
   .skills-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: minmax(1fr);
     gap: 15px;
+    .logo-container {
+      opacity: 0;
+      transform: scale(0);
+      animation: skillsAnim 0.3s ease-out forwards;
+    }
+    @for $i from 1 through 15 {
+      .logo-container:nth-child(#{$i}) {
+        animation-delay: 0.1s * $i;
+      }
+    }
+  }
+}
+@keyframes skillsAnim {
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 

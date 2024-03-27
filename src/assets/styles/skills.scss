@@ -8,9 +8,14 @@
     @include mix.title;
   }
 }
+.skills-infos {
+  @include mix.styledContainer;
+  background-color: vars.$thirdColor;
+}
 
 @media screen and (min-width: vars.$desktop) {
-  .skills-title {
+  .skills-title,
+  .skills-infos {
     margin: 30px 0;
   }
 }

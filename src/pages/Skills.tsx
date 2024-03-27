@@ -10,6 +10,12 @@ const Skills = () => {
       <SkillsGroup title="Langages et frameworks" data={0} />
       <SkillsGroup title="Gestion de version" data={1} />
       <SkillsGroup title="Outils" data={2} />
+      <div className="skills-infos">
+        <p>
+          Connaissances en SEO, tests unitaires et d'intégrations (Jest, React
+          Testing Library)
+        </p>
+      </div>
     </main>
   )
 }

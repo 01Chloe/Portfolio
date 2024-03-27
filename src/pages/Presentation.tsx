@@ -4,14 +4,17 @@ import Logo from "../components/Logo"
 import likedinLogo from "/img/linkedin.svg"
 import githubLogo from "/img/github.svg"
 import Writer from "../components/Writer"
+import ArrowBottom from "/img/arrow-bottom.svg"
+import { useState } from "react"
 
 const Presentation = () => {
+  const [isAboutOpen, setIsAboutOpen] = useState(false)
   return (
     <main>
       <section className="section-typewriter">
         <Writer />
       </section>
-      <section className="section-about">
+      <section className={isAboutOpen ? "section-about open" : "section-about"}>
         <h2>Présentation</h2>
         <p>
           Je suis <strong>Chloé Allier, développeuse web front-end</strong>{" "}
@@ -50,9 +53,15 @@ const Presentation = () => {
           souhaitez discuter de collaborations potentielles ou des projets
           stimulants à réaliser ensemble !
         </p>
+        <img
+          src={ArrowBottom}
+          alt="Voir le contenu"
+          className="arrow-bottom"
+          onClick={() => setIsAboutOpen(!isAboutOpen)}
+        />
       </section>
       <ContactBtn />
-      <section className="section-about">
+      <section className="section-contact">
         <h2>Me retrouver</h2>
         <div className="about-logo-container">
           <a href="https://github.com/01Chloe" target="_blank">

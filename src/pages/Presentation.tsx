@@ -1,10 +1,10 @@
 import "../assets/styles/presentation.scss"
 import ContactBtn from "../components/ContactBtn"
 import Logo from "../components/Logo"
-import likedinLogo from "/img/linkedin.svg"
-import githubLogo from "/img/github.svg"
+import likedinLogo from "/img/icons/linkedin.svg"
+import githubLogo from "/img/icons/github.svg"
 import Writer from "../components/Writer"
-import ArrowBottom from "/img/arrow-bottom.svg"
+import ArrowBottom from "/img/icons/arrow-bottom.svg"
 import { useState } from "react"
 
 const Presentation = () => {

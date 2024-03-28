@@ -1,0 +1,42 @@
+@use "_mixins.scss" as mix;
+@use "_variables" as vars;
+
+.section-projects {
+  @include mix.styledContainer;
+  background-color: vars.$mainColor;
+  margin: 15px 0;
+  @for $i from 1 through 10 {
+    .project-container:nth-child(#{$i}) {
+      animation-delay: 0.1s * $i;
+    }
+  }
+  h2 {
+    @include mix.title;
+    margin-bottom: 15px;
+  }
+  .projects-container {
+    @include mix.flexCenter;
+    margin: 0 15px;
+  }
+}
+@media screen and (min-width: vars.$tablet) {
+  .section-projects {
+    .projects-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+  }
+}
+@media screen and (min-width: vars.$desktop) {
+  .section-projects {
+    margin: 30px 0;
+    padding: 30px;
+    h2 {
+      margin-bottom: 30px;
+    }
+    .projects-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}

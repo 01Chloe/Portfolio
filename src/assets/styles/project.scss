@@ -1,0 +1,96 @@
+@use "_variables.scss" as vars;
+@use "_mixins.scss" as mix;
+
+.project-container {
+  @include mix.styledContainer;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 15px;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: rotate(10deg);
+  animation: projectAnim 0.3s ease-out forwards;
+  &:hover .project-content {
+    opacity: 1;
+  }
+  &:hover .project-cover {
+    scale: 1.05;
+  }
+  .project-cover {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    transition: scale 0.3s ease-out;
+  }
+  .project-content {
+    transition: opacity 0.3s ease-out;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    color: vars.$veryLightColor;
+    background: rgba(7, 22, 27, 0.8);
+    opacity: 0;
+    h3 {
+      @include mix.title;
+      margin-bottom: 5px;
+      font-size: 1.5rem;
+    }
+    .project-date {
+      font-size: 0.75rem;
+      margin-bottom: 15px;
+    }
+    .project-skills-container,
+    .projects-links-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 15px;
+    }
+    .projects-links-container {
+      margin: 15px 0;
+      a {
+        padding: 8px;
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        background-color: vars.$secondaryColor;
+        text-decoration: none;
+        color: vars.$veryLightColor;
+        transition: scale 0.3s ease-out;
+        &:hover {
+          scale: 1.05;
+        }
+      }
+    }
+  }
+}
+@keyframes projectAnim {
+  to {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+@media screen and (min-width: vars.$tablet) {
+  .project-container {
+    height: 250px;
+    .project-content {
+      h3 {
+        margin-bottom: 15px;
+        font-size: 2rem;
+      }
+      .project-date {
+        margin-bottom: 30px;
+        font-size: 1rem;
+      }
+      .projects-links-container {
+        margin-top: 30px;
+      }
+    }
+  }
+}

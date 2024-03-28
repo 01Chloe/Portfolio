@@ -1,14 +1,21 @@
 @use "_variables.scss" as vars;
 
-.error-page-container {
+.error-page {
   text-align: center;
   padding: 100px 30px;
   font-size: 1.5rem;
-  .error-page-message {
-    font-size: 7rem;
+  &-message {
+    font-size: 5rem;
     margin-bottom: 50px;
   }
-  .error-page-link {
+  &-link {
     color: vars.$veryLightColor;
+  }
+}
+@media screen and (min-width: vars.$tablet) {
+  .error-page {
+    &-message {
+      font-size: 7rem;
+    }
   }
 }

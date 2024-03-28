@@ -3,7 +3,7 @@ import "../assets/styles/errorPage.scss"
 
 const ErrorPage = () => {
   return (
-    <main className="error-page-container">
+    <main className="error-page">
       <p>Page introuvable</p>
       <p className="error-page-message">Erreur 404</p>
       <Link to="/" className="error-page-link">

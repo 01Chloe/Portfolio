@@ -11,14 +11,13 @@ const Projects = () => {
       cover: string
       skills: string[]
       date: string
-      tags: string[]
       links: { github?: string; demo?: string }[]
     }[]
   }>("/data/projects.json")
   return (
     <main>
       <section className="section-projects">
-        <h2>Projects</h2>
+        <h2>Projets</h2>
         <div className="projects-container">
           {Array.isArray(projectsList?.projects) &&
             projectsList.projects.map(
@@ -29,7 +28,6 @@ const Projects = () => {
                 cover: string
                 skills: string[]
                 date: string
-                tags: string[]
                 links: { github?: string; demo?: string }[]
               }) => <Project item={item} key={item.id} />
             )}

@@ -35,15 +35,17 @@
       margin-bottom: 15px;
     }
   }
-  .arrow-bottom {
-    transition: transform 0.3s ease-out;
+  .btn-more-infos {
     position: absolute;
     bottom: 5px;
     left: 50%;
-    transform: translateX(-50%) rotate(0);
     width: 30px;
     height: 30px;
     z-index: 3;
+    transition: transform 0.3s ease-out;
+    transform: translateX(-50%) rotate(0);
+    background-color: transparent;
+    border: none;
     cursor: pointer;
   }
   &.open {
@@ -51,7 +53,7 @@
     &::after {
       background: transparent;
     }
-    .arrow-bottom {
+    .btn-more-infos {
       transform: translateX(-50%) rotate(-180deg);
     }
   }
@@ -82,13 +84,38 @@
   }
 }
 @media screen and (min-width: vars.$desktop) {
-  .section-about {
-    max-height: 2000px;
-    &::after {
-      background: transparent;
+  .about-container {
+    display: grid;
+    grid-template-areas:
+      "write write"
+      "about findme"
+      "about contact";
+    column-gap: 30px;
+    .section-typewriter {
+      grid-area: write;
     }
-    .arrow-bottom {
-      display: none;
+    .section-about {
+      margin: 0;
+      max-height: 2000px;
+      grid-area: about;
+      &::after {
+        background: transparent;
+      }
+      .btn-more-infos {
+        display: none;
+      }
+    }
+    .contact-btn {
+      grid-area: contact;
+      max-height: 42px;
+    }
+    .section-contact {
+      grid-area: findme;
+      margin-top: auto;
+      .about-logo-container {
+        flex-direction: column;
+        gap: 15px;
+      }
     }
   }
 }

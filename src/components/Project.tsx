@@ -9,7 +9,6 @@ type ProjectProps = {
     cover: string
     skills: string[]
     date: string
-    tags: string[]
     links: { github?: string; demo?: string }[]
   }
 }
@@ -35,13 +34,21 @@ const Project = ({ item }: ProjectProps) => {
           (link: { github?: string; demo?: string }, index: number) => (
             <div className="projects-links-container" key={index}>
               {link.github && (
-                <a href={link.github} target="_blank">
+                <a
+                  href={link.github}
+                  target="_blank"
+                  aria-label={`Voir le code du site ${item.name}`}
+                >
                   GitHub
                 </a>
               )}
               {link.demo && (
-                <a href={link.demo} target="_blank">
-                  Aperçu
+                <a
+                  href={link.demo}
+                  target="_blank"
+                  aria-label={`Visiter le site ${item.name}`}
+                >
+                  Visiter
                 </a>
               )}
             </div>

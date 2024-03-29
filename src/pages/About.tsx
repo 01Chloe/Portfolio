@@ -1,4 +1,4 @@
-import "../assets/styles/presentation.scss"
+import "../assets/styles/about.scss"
 import ContactBtn from "../components/ContactBtn"
 import Logo from "../components/Logo"
 import likedinLogo from "/img/icons/linkedin.svg"
@@ -10,7 +10,7 @@ import { useState } from "react"
 const About = () => {
   const [isAboutOpen, setIsAboutOpen] = useState(false)
   return (
-    <main>
+    <main className="about-container">
       <section className="section-typewriter">
         <Writer />
       </section>
@@ -53,12 +53,14 @@ const About = () => {
           souhaitez discuter de collaborations potentielles ou des projets
           stimulants à réaliser ensemble !
         </p>
-        <img
-          src={ArrowBottom}
-          alt="Voir le contenu"
-          className="arrow-bottom"
-          onClick={() => setIsAboutOpen(!isAboutOpen)}
-        />
+        <button className="btn-more-infos">
+          <img
+            src={ArrowBottom}
+            alt="Voir le contenu"
+            className="arrow-bottom"
+            onClick={() => setIsAboutOpen(!isAboutOpen)}
+          />
+        </button>
       </section>
       <ContactBtn />
       <section className="section-contact">

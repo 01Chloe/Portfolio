@@ -7,7 +7,6 @@
       "cover": "./img/pic/ArgentBank-desktop.PNG",
       "skills": ["React", "Redux", "Swagger"],
       "date": "Février 2024",
-      "tags": [],
       "links": [
         {
           "github": "https://github.com/01Chloe/ArgentBank-website"
@@ -21,7 +20,6 @@
       "cover": "./img/pic/OhMyFood-desktop.PNG",
       "skills": ["HTML", "SASS"],
       "date": "Septembre 2023",
-      "tags": [],
       "links": [
         {
           "github": "https://github.com/01Chloe/OhMyFood",
@@ -36,7 +34,6 @@
       "cover": "./img/pic/Kasa-desktop.PNG",
       "skills": ["HTML", "SASS", "React"],
       "date": "Décembre 2023",
-      "tags": [],
       "links": [
         {
           "github": "https://github.com/01Chloe/Kasa",
@@ -51,7 +48,6 @@
       "cover": "./img/pic/SpaceTourism-desktop.PNG",
       "skills": ["HTML", "SASS", "JS"],
       "date": "Mars 2023",
-      "tags": [],
       "links": [
         {
           "github": "https://github.com/01Chloe/Space-Tourism----FrontEnd-Mentor-Challenge",
@@ -66,7 +62,6 @@
       "cover": "./img/pic/SophieBluel-desktop.PNG",
       "skills": ["HTML", "CSS", "JS", "Postman"],
       "date": "Octobre 2023",
-      "tags": [],
       "links": [
         {
           "github": "https://github.com/01Chloe/Portfolio-Architecte-Sophie-Bluel"
@@ -80,7 +75,6 @@
       "cover": "./img/pic/Booki-desktop.PNG",
       "skills": ["HTML", "CSS"],
       "date": "Août 2023",
-      "tags": [],
       "links": []
     }
   ]

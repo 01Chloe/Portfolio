@@ -7,7 +7,7 @@ import Writer from "../components/Writer"
 import ArrowBottom from "/img/icons/arrow-bottom.svg"
 import { useState } from "react"
 
-const Presentation = () => {
+const About = () => {
   const [isAboutOpen, setIsAboutOpen] = useState(false)
   return (
     <main>
@@ -15,7 +15,7 @@ const Presentation = () => {
         <Writer />
       </section>
       <section className={isAboutOpen ? "section-about open" : "section-about"}>
-        <h2>Présentation</h2>
+        <h2>À propos</h2>
         <p>
           Je suis <strong>Chloé Allier, développeuse web front-end</strong>{" "}
           passionnée par la création d'interfaces en ligne immersives et
@@ -78,4 +78,4 @@ const Presentation = () => {
     </main>
   )
 }
-export default Presentation
+export default About

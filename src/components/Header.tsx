@@ -19,7 +19,7 @@ const Header = () => {
           className={({ isActive }) => (isActive ? "active" : "")}
           onClick={() => setIsOpen(false)}
         >
-          Présentation
+          Accueil
         </NavLink>
         <NavLink
           to="/skills"

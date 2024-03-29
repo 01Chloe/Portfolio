@@ -1,5 +1,6 @@
 import "../assets/styles/projects.scss"
 import { useFetchData } from "../hookCustom/useFetchData"
+import { useEffect } from "react"
 import Project from "../components/Project"
 
 const Projects = () => {
@@ -14,6 +15,10 @@ const Projects = () => {
       links: { github?: string; demo?: string }[]
     }[]
   }>("/data/projects.json")
+
+  useEffect(() => {
+    document.title = "Allier Chloé - Projets"
+  }, [])
   return (
     <main>
       <section className="section-projects">

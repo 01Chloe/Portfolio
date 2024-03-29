@@ -1,7 +1,11 @@
 import "../assets/styles/skills.scss"
 import SkillsGroup from "../components/SkillsGroup"
+import { useEffect } from "react"
 
 const Skills = () => {
+  useEffect(() => {
+    document.title = "Allier Chloé - Compétences"
+  }, [])
   return (
     <main>
       <section className="skills-title">

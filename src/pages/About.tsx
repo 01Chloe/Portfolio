@@ -5,10 +5,14 @@ import likedinLogo from "/img/icons/linkedin.svg"
 import githubLogo from "/img/icons/github.svg"
 import Writer from "../components/Writer"
 import ArrowBottom from "/img/icons/arrow-bottom.svg"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 const About = () => {
   const [isAboutOpen, setIsAboutOpen] = useState(false)
+
+  useEffect(() => {
+    document.title = "Allier Chloé - Accueil"
+  }, [])
   return (
     <main className="about-container">
       <section className="section-typewriter">

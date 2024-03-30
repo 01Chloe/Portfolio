@@ -1,5 +1,5 @@
 import "../assets/styles/project.scss"
-import Logo from "./Logo"
+import { Link } from "react-router-dom"
 
 type ProjectProps = {
   item: {
@@ -15,47 +15,12 @@ type ProjectProps = {
 
 const Project = ({ item }: ProjectProps) => {
   return (
-    <div className="project-container">
+    <Link to={"/project/" + item.id} className="project-container">
       <img src={item.cover} alt={item.name} className="project-cover" />
-      <div className="project-content">
+      <div className="project-title">
         <h3>{item.name}</h3>
-        <p className="project-date">{item.date}</p>
-        <div className="project-skills-container">
-          {item.skills.map((skill: string, index: number) => (
-            <Logo
-              logoName={skill}
-              logoImg={`./img/icons/${skill.toLowerCase()}.svg`}
-              logoSmall={true}
-              key={index}
-            />
-          ))}
-        </div>
-        {item.links.map(
-          (link: { github?: string; demo?: string }, index: number) => (
-            <div className="projects-links-container" key={index}>
-              {link.github && (
-                <a
-                  href={link.github}
-                  target="_blank"
-                  aria-label={`Voir le code du site ${item.name}`}
-                >
-                  GitHub
-                </a>
-              )}
-              {link.demo && (
-                <a
-                  href={link.demo}
-                  target="_blank"
-                  aria-label={`Visiter le site ${item.name}`}
-                >
-                  Visiter
-                </a>
-              )}
-            </div>
-          )
-        )}
       </div>
-    </div>
+    </Link>
   )
 }
 export default Project

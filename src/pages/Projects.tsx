@@ -3,18 +3,20 @@ import { useFetchData } from "../hookCustom/useFetchData"
 import { useEffect } from "react"
 import Project from "../components/Project"
 
+interface Project {
+  id: number
+  name: string
+  desc: string
+  cover: string
+  skills: string[]
+  date: string
+  links: { github?: string; demo?: string }[]
+}
+
 const Projects = () => {
-  const projectsList = useFetchData<{
-    projects: {
-      id: number
-      name: string
-      desc: string
-      cover: string
-      skills: string[]
-      date: string
-      links: { github?: string; demo?: string }[]
-    }[]
-  }>("/data/projects.json")
+  const projectsList = useFetchData<{ projects: Project[] }>(
+    "/data/projects.json"
+  )
 
   useEffect(() => {
     document.title = "Allier Chloé - Projets"

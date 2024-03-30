@@ -4,7 +4,7 @@
       "id": 1,
       "name": "ArgentBank",
       "desc": "Dans ce projet, j'ai travaillé sur le développement front-end d'une application bancaire, en utilisant React et Redux pour créer une interface utilisateur dynamique et réactive. Mon rôle principal consistait à intégrer harmonieusement le front-end avec le back-end via des appels API, assurant ainsi une interaction fluide et sécurisée avec les données. J'ai implémenté un tableau de bord complet et adaptatif, offrant aux utilisateurs une expérience intuitive et personnalisée. L'utilisation de Redux m'a permis de gérer efficacement l'état de l'application, garantissant une gestion optimale des données. De plus, j'ai utilisé Swagger pour documenter les points d'accès de l'API, facilitant ainsi la collaboration et assurant la conformité avec les spécifications définies. Ce projet démontre ma capacité à créer des interfaces utilisateur dynamiques et performantes, tout en maintenant une architecture robuste et évolutive",
-      "cover": "./img/pic/ArgentBank-desktop.PNG",
+      "cover": "/img/pic/ArgentBank-desktop.PNG",
       "skills": ["React", "Redux", "Swagger"],
       "date": "Février 2024",
       "links": [
@@ -17,7 +17,7 @@
       "id": 2,
       "name": "OhMyFood",
       "desc": "Ce projet m'a conduit à concevoir l'interface mobile-first du site web d'une start-up en pleine croissance. J'ai opté pour Sass pour organiser efficacement les styles et assurer une maintenance simplifiée à long terme. L'implémentation d'animations CSS a ajouté une touche d'interactivité et d'attrait visuel à l'expérience utilisateur. J'ai également géré les versions du projet avec Git et GitHub, garantissant un suivi précis des modifications. Ce projet illustre ma capacité à créer des interfaces web réactives et esthétiques, tout en adoptant des pratiques de développement collaboratives et axées sur la qualité du code.",
-      "cover": "./img/pic/OhMyFood-desktop.PNG",
+      "cover": "/img/pic/OhMyFood-desktop.PNG",
       "skills": ["HTML", "SASS"],
       "date": "Septembre 2023",
       "links": [
@@ -31,7 +31,7 @@
       "id": 3,
       "name": "Kasa",
       "desc": "Dans ce projet, j'ai pris en charge le développement du front-end d'une application en utilisant React et React Router. Mon objectif principal était de créer une expérience utilisateur moderne et réactive en me basant sur les maquettes fournies. Ce projet a été axé exclusivement sur le développement front-end, en utilisant des données simulées provenant d'un fichier JSON. J'ai travaillé méticuleusement pour mettre en œuvre les fonctionnalités selon les spécifications et pour garantir une interface utilisateur fluide et intuitive. Ce projet démontre ma capacité à utiliser les technologies React pour créer des applications web dynamiques et conviviales.",
-      "cover": "./img/pic/Kasa-desktop.PNG",
+      "cover": "/img/pic/Kasa-desktop.PNG",
       "skills": ["HTML", "SASS", "React"],
       "date": "Décembre 2023",
       "links": [
@@ -45,7 +45,7 @@
       "id": 4,
       "name": "SpaceTourism",
       "desc": "Pour relever ce challenge du site FrontEnd-Mentor, j'ai exploité mes compétences en HTML, SASS et JavaScript. J'ai découpé le design fourni, en reproduisant fidèlement chaque élément visuel et en veillant à ce que l'expérience utilisateur soit fluide et attrayante. En utilisant HTML, j'ai structuré le contenu de chaque page selon les spécifications du design. J'ai utilisé SASS pour organiser efficacement les styles, en me basant sur les palettes de couleurs et les typographies fournies. Grâce à JavaScript, j'ai implémenté des fonctionnalités interactives, telles que des animations et des transitions, pour rendre le site plus dynamique et engageant. Ce défi m'a permis de mettre en pratique mes compétences en développement front-end, en travaillant sur un projet réaliste et en relevant les défis liés à la conversion d'une maquette en un site web pleinement fonctionnel. Le résultat final est un site web de tourisme spatial qui reflète fidèlement le design proposé, tout en offrant une expérience utilisateur immersive et captivante.",
-      "cover": "./img/pic/SpaceTourism-desktop.PNG",
+      "cover": "/img/pic/SpaceTourism-desktop.PNG",
       "skills": ["HTML", "SASS", "JS"],
       "date": "Mars 2023",
       "links": [
@@ -59,7 +59,7 @@
       "id": 5,
       "name": "Sophie Bluel",
       "desc": "Dans ce projet, j'ai conçu une page web dynamique pour le site internet d'une architecte d'intérieur en utilisant JavaScript. J'ai mis en place une communication avec une API pour récupérer et afficher dynamiquement les projets réalisés. Une partie importante de ce projet a été la création d'une interface de connexion pour l'administrateur du site. Cette interface lui permet de se connecter de manière sécurisée afin d'accéder à un espace d'administration où il peut gérer le contenu du site. J'ai également implémenté une modale intuitive qui permet à l'administrateur d'ajouter facilement de nouveaux projets, aux contenus déjà existants. Ce projet démontre ma capacité à concevoir des interfaces web fonctionnelles et conviviales tout en intégrant des fonctionnalités avancées telles que l'authentification utilisateur et la manipulation de données à partir d'une API.",
-      "cover": "./img/pic/SophieBluel-desktop.PNG",
+      "cover": "/img/pic/SophieBluel-desktop.PNG",
       "skills": ["HTML", "CSS", "JS", "Postman"],
       "date": "Octobre 2023",
       "links": [
@@ -72,7 +72,7 @@
       "id": 6,
       "name": "Booki",
       "desc": "Dans ce projet, j'ai eu l'opportunité de concevoir la page d'accueil pour une agence de voyage en utilisant HTML et CSS. Mon objectif principal était d'assurer une intégration fluide et responsive du site web de l'agence. Ce projet met en valeur ma capacité à créer des interfaces web attractives et fonctionnelles, tout en garantissant une performance et une accessibilité accrues pour les utilisateurs.",
-      "cover": "./img/pic/Booki-desktop.PNG",
+      "cover": "/img/pic/Booki-desktop.PNG",
       "skills": ["HTML", "CSS"],
       "date": "Août 2023",
       "links": []

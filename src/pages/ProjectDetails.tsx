@@ -30,7 +30,7 @@ const ProjectDetails = () => {
     if (projectDetails) {
       document.title = `Allier Chloé - ${projectDetails.name}`
     }
-  }, [projectDetails?.name])
+  }, [projectDetails])
 
   if (!projectDetails) return null
 
@@ -44,14 +44,15 @@ const ProjectDetails = () => {
         />
       </Link>
       <div className="project-content">
-        {/* <img
+        <div className="project-top">
+          <h3>{projectDetails.name}</h3>
+          <p className="project-date">{projectDetails.date}</p>
+        </div>
+        <img
           src={projectDetails.cover}
           alt={projectDetails.name}
           className="project-image"
-        /> */}
-        <h3>{projectDetails.name}</h3>
-        <p className="project-date">{projectDetails.date}</p>
-        <p className="project-description">{projectDetails.desc}</p>
+        />
         <div className="project-skills-container">
           {projectDetails.skills.map((skill: string, index: number) => (
             <Logo
@@ -61,6 +62,7 @@ const ProjectDetails = () => {
             />
           ))}
         </div>
+        <p className="project-description">{projectDetails.desc}</p>
         {projectDetails.links.map(
           (link: { github?: string; demo?: string }, index: number) => (
             <div className="projects-links-container" key={index}>

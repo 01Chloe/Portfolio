@@ -8,6 +8,8 @@
   box-sizing: border-box;
 }
 #root {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
   background-color: vars.$backgroundColor;
   color: vars.$veryLightColor;
@@ -20,6 +22,7 @@ main {
   transform: translateY(150px);
   opacity: 0;
   animation: pageAnim 0.5s ease-out forwards;
+  flex-grow: 1;
 }
 @keyframes pageAnim {
   to {

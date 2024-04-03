@@ -45,7 +45,7 @@ const ProjectDetails = () => {
       </Link>
       <div className="project-content">
         <div className="project-top">
-          <h3>{projectDetails.name}</h3>
+          <h2>{projectDetails.name}</h2>
           <p className="project-date">{projectDetails.date}</p>
         </div>
         <img

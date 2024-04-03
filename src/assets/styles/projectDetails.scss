@@ -9,6 +9,10 @@
     width: 30px;
     height: 30px;
     margin-bottom: 15px;
+    transition: transform 0.3s ease-out;
+    &:hover {
+      transform: scale(1.09);
+    }
   }
   .project-content {
     position: relative;
@@ -22,7 +26,7 @@
       padding: 15px 15px 0;
       left: 50%;
       transform: translateX(-50%);
-      h3 {
+      h2 {
         @include mix.title;
         margin-bottom: 15px;
         font-size: 1.5rem;
@@ -55,7 +59,8 @@
         border-radius: 10px;
         background-color: vars.$secondaryColor;
         text-decoration: none;
-        color: vars.$veryLightColor;
+        color: vars.$thirdColor;
+        font-weight: 600;
         transition: scale 0.3s ease-out;
         &:hover {
           scale: 1.05;
@@ -75,6 +80,55 @@
       }
       .project-description {
         text-align: center;
+      }
+    }
+  }
+}
+@media screen and (min-width: vars.$desktop) {
+  .project-details-container {
+    .project-content {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(auto-fit, 50px);
+      grid-template-areas:
+        "image title"
+        "image skills"
+        "image buttons"
+        "desc desc";
+      gap: 30px;
+      .project-top {
+        grid-area: title;
+        background: transparent;
+        height: auto;
+        left: 0;
+        transform: translateX(0);
+      }
+      .project-image {
+        grid-area: image;
+        display: block;
+        width: 100%;
+        max-width: 700px;
+        height: 300px;
+        object-fit: cover;
+        object-position: top center;
+        border-radius: 10px;
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+      }
+      .project-skills-container {
+        grid-area: skills;
+      }
+      .projects-links-container {
+        grid-area: buttons;
+      }
+      .project-skills-container,
+      .projects-links-container {
+        justify-content: flex-start;
+        gap: 60px;
+      }
+      .project-description {
+        font-size: 1.125rem;
+        grid-area: desc;
+        text-align: start;
       }
     }
   }

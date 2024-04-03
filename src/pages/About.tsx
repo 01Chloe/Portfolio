@@ -34,7 +34,7 @@ const About = () => {
           Dans ma quête pour approfondir mes compétences et suivre les
           meilleures pratiques de l'industrie, j'ai entrepris une formation de
           <strong> développeur intégrateur web chez OpenClassrooms</strong>,
-          certifiante et équivalente à un niveau bac+2.
+          certifiante et équivalente à un niveau <strong>bac+2</strong>.
         </p>
         <p>
           Cette expérience m'a permis de consolider mes connaissances et
@@ -56,6 +56,11 @@ const About = () => {
           Explorez mon portfolio et <strong>contactez-moi</strong> si vous
           souhaitez discuter de collaborations potentielles ou des projets
           stimulants à réaliser ensemble !
+          <br />
+          Je suis disponible sur <strong>Clermont-Ferrand</strong> et ses
+          alentours et aussi en
+          <strong> full remote dans toute la France</strong>. Je serais ravi
+          d'échanger avec vous sur de nouvelles opportunités professionnelles.
         </p>
         <button className="btn-more-infos">
           <img

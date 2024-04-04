@@ -36,18 +36,14 @@
       }
     }
     .project-image {
-      display: block;
-      margin: 0 auto;
-      border-radius: 10px;
+      @include mix.centerBlock;
       width: 100%;
       max-width: 618px;
     }
     .project-skills-container,
     .projects-links-container {
-      display: flex;
-      flex-direction: row;
+      @include mix.flexRow;
       justify-content: flex-start;
-      align-items: center;
       gap: 30px;
       margin: 15px 0;
     }
@@ -87,15 +83,13 @@
 @media screen and (min-width: vars.$desktop) {
   .project-details-container {
     .project-content {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
+      @include mix.gridTwoCol;
       grid-template-rows: repeat(auto-fit, 50px);
       grid-template-areas:
         "image title"
         "image skills"
         "image buttons"
         "desc desc";
-      gap: 30px;
       .project-top {
         grid-area: title;
         background: transparent;

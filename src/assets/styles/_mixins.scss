@@ -22,3 +22,21 @@
   background-color: darken(vars.$secondaryColor, 23%);
   margin: 15px 0;
 }
+
+@mixin centerBlock {
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+@mixin gridTwoCol {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+@mixin flexRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

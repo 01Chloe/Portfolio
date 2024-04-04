@@ -59,10 +59,8 @@
   }
 }
 .about-logo-container {
-  display: flex;
-  flex-direction: row;
+  @include mix.flexRow;
   justify-content: space-around;
-  align-items: center;
   a {
     color: vars.$veryLightColor;
     text-decoration: none;

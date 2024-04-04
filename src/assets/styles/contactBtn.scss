@@ -1,9 +1,8 @@
 @use "_variables.scss" as vars;
+@use "_mixins.scss" as mix;
 
 .contact-btn {
-  display: block;
-  margin: 0 auto;
-  border-radius: 10px;
+  @include mix.centerBlock;
   width: 135px;
   background-color: vars.$secondaryColor;
   padding: 5px 15px;

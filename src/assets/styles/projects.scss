@@ -22,9 +22,7 @@
 @media screen and (min-width: vars.$tablet) {
   .section-projects {
     .projects-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 30px;
+      @include mix.gridTwoCol;
     }
   }
 }

@@ -40,6 +40,30 @@
       width: 100%;
       max-width: 618px;
     }
+    .project-skills-container {
+      .logo-container {
+        opacity: 0;
+        transform: scale(0);
+        animation: skillsAnim 0.3s ease-out forwards;
+      }
+    }
+    @for $i from 1 through 7 {
+      .logo-container:nth-child(#{$i}) {
+        animation-delay: 0.1s * $i;
+      }
+    }
+    .projects-links-container {
+      .link-details {
+        opacity: 0;
+        transform: translateY(25px);
+        animation: btnAnim 0.3s ease-out forwards;
+      }
+    }
+    @for $i from 1 through 7 {
+      .link-details:nth-child(#{$i}) {
+        animation-delay: 0.1s * $i;
+      }
+    }
     .project-skills-container,
     .projects-links-container {
       @include mix.flexRow;
@@ -63,6 +87,18 @@
         }
       }
     }
+  }
+}
+@keyframes skillsAnim {
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes btnAnim {
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
 }
 @media screen and (min-width: vars.$tablet) {

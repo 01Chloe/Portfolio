@@ -71,6 +71,7 @@ const ProjectDetails = () => {
                   href={link.github}
                   target="_blank"
                   aria-label={`Voir le code du site ${projectDetails.name}`}
+                  className="link-details"
                 >
                   GitHub
                 </a>
@@ -80,6 +81,7 @@ const ProjectDetails = () => {
                   href={link.demo}
                   target="_blank"
                   aria-label={`Visiter le site ${projectDetails.name}`}
+                  className="link-details"
                 >
                   Visiter
                 </a>

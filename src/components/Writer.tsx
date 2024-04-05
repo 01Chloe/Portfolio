@@ -4,12 +4,13 @@ import "../assets/styles/writer.scss"
 const Writer = () => {
   return (
     <div className="typewriter">
+      <p>Chloé Allier,</p>
       <Typewriter
         onInit={(typewriter) => {
           typewriter
             .changeDelay(40)
             .changeDeleteSpeed(30)
-            .typeString("Chloé Allier, Développeuse web Front-End")
+            .typeString("Développeuse web Front-End")
             .pauseFor(1500)
             .deleteChars(13)
             .pauseFor(500)

@@ -6,6 +6,7 @@ import githubLogo from "/img/icons/github.svg"
 import Writer from "../components/Writer"
 import ArrowBottom from "/img/icons/arrow-bottom.svg"
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom"
 
 const About = () => {
   const [isAboutOpen, setIsAboutOpen] = useState(false)
@@ -44,9 +45,12 @@ const About = () => {
         </p>
         <p>
           Au sein de mon <strong>portfolio</strong>, je suis ravie de partager
-          avec vous une sélection diversifiée de projets, allant des
-          réalisations les plus récentes à des travaux personnels qui ont marqué
-          mon parcours.
+          avec vous une sélection diversifiée de{" "}
+          <Link to="/projects" className="link-projects">
+            projets
+          </Link>
+          , allant des réalisations les plus récentes à des travaux personnels
+          qui ont marqué mon parcours.
           <br />
           Chaque projet représente une étape importante de mon évolution en tant
           que développeuse web front-end, mettant en lumière mes compétences et

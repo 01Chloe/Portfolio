@@ -9,7 +9,7 @@ const Writer = () => {
           typewriter
             .changeDelay(40)
             .changeDeleteSpeed(30)
-            .typeString("Allier Chloé, Développeuse web Front-End")
+            .typeString("Chloé Allier, Développeuse web Front-End")
             .pauseFor(1500)
             .deleteChars(13)
             .pauseFor(500)

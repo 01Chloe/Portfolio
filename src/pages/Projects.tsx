@@ -8,6 +8,7 @@ interface Project {
   name: string
   desc: string
   cover: string
+  images: string[]
   skills: string[]
   date: string
   links: { github?: string; demo?: string }[]
@@ -33,6 +34,7 @@ const Projects = () => {
                 name: string
                 desc: string
                 cover: string
+                images: string[]
                 skills: string[]
                 date: string
                 links: { github?: string; demo?: string }[]

@@ -31,7 +31,6 @@
     opacity: 1;
   }
 }
-
 @media screen and (min-width: vars.$tablet) {
   .section-skills {
     .skills-container {
@@ -39,12 +38,20 @@
     }
   }
 }
-
 @media screen and (min-width: vars.$desktop) {
   .section-skills {
     margin: 30px 0;
     .skills-container {
       grid-template-columns: repeat(5, 1fr);
+    }
+  }
+}
+@media screen and (min-width: vars.$largeDesktop) {
+  .section-skills {
+    padding: 30px;
+    margin: 60px 120px;
+    h3 {
+      font-size: 1.5rem;
     }
   }
 }

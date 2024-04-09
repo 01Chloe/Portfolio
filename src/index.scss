@@ -17,7 +17,6 @@
   font-size: 16px;
   padding: 15px;
 }
-
 main {
   transform: translateY(150px);
   opacity: 0;
@@ -30,15 +29,18 @@ main {
     opacity: 1;
   }
 }
-
 @media screen and (min-width: vars.$tablet) {
   #root {
     padding: 30px 60px 15px;
   }
 }
-
 @media screen and (min-width: vars.$desktop) {
   #root {
     padding: 30px 100px 15px;
+  }
+}
+@media screen and (min-width: vars.$largeDesktop) {
+  #root {
+    padding: 30px 250px 15px;
   }
 }

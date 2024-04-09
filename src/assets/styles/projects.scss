@@ -38,3 +38,16 @@
     }
   }
 }
+@media screen and (min-width: vars.$largeDesktop) {
+  .section-projects {
+    margin: 60px;
+    padding: 60px;
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 60px;
+    }
+    .projects-container {
+      gap: 60px;
+    }
+  }
+}

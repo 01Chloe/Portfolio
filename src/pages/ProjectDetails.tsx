@@ -10,6 +10,7 @@ interface Project {
   name: string
   desc: string
   cover: string
+  images: string[]
   skills: string[]
   date: string
   links: { github?: string; demo?: string }[]
@@ -89,6 +90,16 @@ const ProjectDetails = () => {
             </div>
           )
         )}
+        <div className="project-images-container">
+          {projectDetails.images.map((img: string, index: number) => (
+            <img
+              src={img}
+              alt={projectDetails.name}
+              key={index}
+              className="project-img"
+            />
+          ))}
+        </div>
       </div>
     </main>
   )

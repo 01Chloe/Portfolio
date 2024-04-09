@@ -87,6 +87,12 @@
         }
       }
     }
+    .project-description {
+      white-space: pre-wrap;
+    }
+    .project-images-container {
+      display: none;
+    }
   }
 }
 @keyframes skillsAnim {
@@ -125,13 +131,15 @@
         "image title"
         "image skills"
         "image buttons"
-        "desc desc";
+        "desc desc"
+        "images images";
       .project-top {
         grid-area: title;
         background: transparent;
         height: auto;
         left: 0;
         transform: translateX(0);
+        padding: 0;
       }
       .project-image {
         grid-area: image;
@@ -159,6 +167,42 @@
         font-size: 1.125rem;
         grid-area: desc;
         text-align: start;
+      }
+      .project-images-container {
+        grid-area: images;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .project-img {
+          width: 250px;
+          object-fit: cover;
+          border-radius: 20px;
+          box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+          margin: 4px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: vars.$largeDesktop) {
+  .project-details-container {
+    margin: 60px 0 15px;
+    padding: 60px;
+    .arrow-left-btn {
+      margin-bottom: 30px;
+    }
+    .project-content {
+      column-gap: 60px;
+      .project-top {
+        h2 {
+          font-size: 2rem;
+        }
+        .project-date {
+          margin-bottom: 30px;
+        }
+      }
+      .project-description {
+        margin-top: 30px;
       }
     }
   }

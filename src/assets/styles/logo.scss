@@ -5,32 +5,34 @@
   @include mix.flexCenter;
   filter: drop-shadow(3px 3px 5px vars.$thirdColor);
   .logo {
-    width: 35px;
-    height: 35px;
+    width: 45px;
+    height: 45px;
   }
   span {
     font-size: 0.75rem;
     font-weight: 300;
   }
 }
-
 @media screen and (min-width: vars.$tablet) {
   .logo-container {
-    .logo {
-      width: 45px;
-      height: 45px;
-    }
     span {
       font-size: 1rem;
     }
   }
 }
-
 @media screen and (min-width: vars.$desktop) {
   .logo-container {
     .logo {
       width: 55px;
       height: 55px;
+    }
+  }
+}
+@media screen and (min-width: vars.$largeDesktop) {
+  .logo-container {
+    .logo {
+      width: 80px;
+      height: 80px;
     }
   }
 }

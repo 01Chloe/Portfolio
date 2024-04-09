@@ -14,6 +14,9 @@
     @include mix.title;
     margin-bottom: 15px;
   }
+  .projects-desc {
+    margin-bottom: 15px;
+  }
   .projects-container {
     @include mix.flexCenter;
     margin: 0 15px;
@@ -33,6 +36,10 @@
     h2 {
       margin-bottom: 30px;
     }
+    .projects-desc {
+      margin-bottom: 30px;
+      font-size: 1.125rem;
+    }
     .projects-container {
       grid-template-columns: repeat(3, 1fr);
     }
@@ -44,6 +51,9 @@
     padding: 60px;
     h2 {
       font-size: 2rem;
+      margin-bottom: 60px;
+    }
+    .projects-desc {
       margin-bottom: 60px;
     }
     .projects-container {

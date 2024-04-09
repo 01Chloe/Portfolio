@@ -26,6 +26,20 @@ const Projects = () => {
     <main>
       <section className="section-projects">
         <h2>Projets</h2>
+        <p className="projects-desc">
+          Je suis <strong>Chloé Allier</strong>,{" "}
+          <strong>développeuse web front-end</strong>.
+          <br />
+          Dans ce <strong>portfolio</strong>, je vous invite à découvrir une
+          sélection variée de projets, allant de mes{" "}
+          <strong>dernières réalisations</strong> à des{" "}
+          <strong>travaux personnels </strong>
+          significatifs.
+          <br />
+          Chacun de ces <strong>projets</strong> a représenté pour moi un défi
+          stimulant et enrichissant, et j'espère qu'ils vous inspireront autant
+          qu'ils ont été pour moi une source d'apprentissage.
+        </p>
         <div className="projects-container">
           {Array.isArray(projectsList?.projects) &&
             projectsList.projects.map(

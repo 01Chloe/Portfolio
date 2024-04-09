@@ -1,5 +1,5 @@
-import { Link, useParams } from "react-router-dom"
-import { useEffect } from "react"
+import { Link, useParams, useNavigate } from "react-router-dom"
+import { useState, useEffect } from "react"
 import arrowLeft from "/img/icons/arrow-left.svg"
 import { useFetchData } from "../hookCustom/useFetchData"
 import Logo from "../components/Logo"
@@ -19,6 +19,10 @@ interface Project {
 const ProjectDetails = () => {
   const { id } = useParams()
   const projectId = id ? parseInt(id) : undefined
+  const navigate = useNavigate()
+
+  const [prevProjectId, setPrevProjectId] = useState<number | null>(null)
+  const [nextProjectId, setNextProjectId] = useState<number | null>(null)
 
   const projectData = useFetchData<{ projects: Project[] }>(
     "/data/projects.json"
@@ -31,7 +35,33 @@ const ProjectDetails = () => {
     if (projectDetails) {
       document.title = `Allier Chloé - ${projectDetails.name}`
     }
-  }, [projectDetails])
+    if (projectId !== undefined && projectId > 0) {
+      setPrevProjectId(projectId - 1)
+    }
+    if (
+      projectId !== undefined &&
+      projectData?.projects &&
+      projectId < projectData.projects.length
+    ) {
+      setNextProjectId(projectId + 1)
+    } else {
+      setNextProjectId(null)
+    }
+  }, [projectDetails, projectId, projectData])
+
+  const goToPrevProject = () => {
+    if (prevProjectId !== null) {
+      navigate(`/project/${prevProjectId}`)
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+  }
+
+  const goToNextProject = () => {
+    if (nextProjectId !== null) {
+      navigate(`/project/${nextProjectId}`)
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    }
+  }
 
   if (!projectDetails) return null
 
@@ -90,16 +120,34 @@ const ProjectDetails = () => {
             </div>
           )
         )}
-        <div className="project-images-container">
-          {projectDetails.images.map((img: string, index: number) => (
-            <img
-              src={img}
-              alt={projectDetails.name}
-              key={index}
-              className="project-img"
-            />
-          ))}
-        </div>
+      </div>
+      <div className="project-images-container">
+        {projectDetails.images.map((img: string, index: number) => (
+          <img
+            src={img}
+            alt={projectDetails.name}
+            key={index}
+            className="project-img"
+          />
+        ))}
+      </div>
+      <div className="btn-group">
+        <button
+          onClick={() => goToPrevProject()}
+          className="count-btn"
+          disabled={prevProjectId === 0}
+          aria-label="Voir le projet précédent"
+        >
+          Précédent
+        </button>
+        <button
+          onClick={() => goToNextProject()}
+          className="count-btn"
+          disabled={nextProjectId === null}
+          aria-label="Voir le projet suivant"
+        >
+          Suivant
+        </button>
       </div>
     </main>
   )

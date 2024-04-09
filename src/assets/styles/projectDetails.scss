@@ -90,8 +90,34 @@
     .project-description {
       white-space: pre-wrap;
     }
-    .project-images-container {
-      display: none;
+  }
+  .project-images-container {
+    display: none;
+  }
+  .btn-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 60px 0 0;
+    .count-btn {
+      cursor: pointer;
+      background-color: vars.$thirdColor;
+      box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+      border: none;
+      padding: 5px 15px;
+      border-radius: 20px;
+      color: vars.$veryLightColor;
+      font-family: vars.$fontFam;
+      font-size: 0.875rem;
+      transition: scale 0.3s ease-out;
+      &:disabled {
+        opacity: 0.3;
+        pointer-events: none;
+        cursor: auto;
+      }
+      &:hover {
+        scale: 1.05;
+      }
     }
   }
 }
@@ -124,6 +150,7 @@
 }
 @media screen and (min-width: vars.$desktop) {
   .project-details-container {
+    margin: 30px 0;
     .project-content {
       @include mix.gridTwoCol;
       grid-template-rows: repeat(auto-fit, 50px);
@@ -131,8 +158,7 @@
         "image title"
         "image skills"
         "image buttons"
-        "desc desc"
-        "images images";
+        "desc desc";
       .project-top {
         grid-area: title;
         background: transparent;
@@ -168,18 +194,23 @@
         grid-area: desc;
         text-align: start;
       }
-      .project-images-container {
-        grid-area: images;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        .project-img {
-          width: 250px;
-          object-fit: cover;
-          border-radius: 20px;
-          box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
-          margin: 4px;
-        }
+    }
+    .project-images-container {
+      background-color: vars.$backgroundColor;
+      margin: 60px;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      .project-img {
+        width: 250px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.3);
+        margin: 10px;
       }
     }
   }
@@ -203,6 +234,14 @@
       }
       .project-description {
         margin-top: 30px;
+      }
+    }
+    .project-images-container {
+      margin: 60px 120px;
+    }
+    .btn-group {
+      .count-btn {
+        font-size: 1rem;
       }
     }
   }

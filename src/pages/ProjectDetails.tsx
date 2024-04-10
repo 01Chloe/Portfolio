@@ -97,26 +97,22 @@ const ProjectDetails = () => {
         {projectDetails.links.map(
           (link: { github?: string; demo?: string }, index: number) => (
             <div className="projects-links-container" key={index}>
-              {link.github && (
-                <a
-                  href={link.github}
-                  target="_blank"
-                  aria-label={`Voir le code du site ${projectDetails.name}`}
-                  className="link-details"
-                >
-                  GitHub
-                </a>
-              )}
-              {link.demo && (
-                <a
-                  href={link.demo}
-                  target="_blank"
-                  aria-label={`Visiter le site ${projectDetails.name}`}
-                  className="link-details"
-                >
-                  Visiter
-                </a>
-              )}
+              <a
+                href={link.github}
+                target="_blank"
+                aria-label={`Voir le code du site ${projectDetails.name}`}
+                className={link.github ? "link" : "link link-disabled"}
+              >
+                GitHub
+              </a>
+              <a
+                href={link.demo}
+                target="_blank"
+                aria-label={`Visiter le site ${projectDetails.name}`}
+                className={link.demo ? "link" : "link link-disabled"}
+              >
+                Visiter
+              </a>
             </div>
           )
         )}

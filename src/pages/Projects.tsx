@@ -36,9 +36,13 @@ const Projects = () => {
           <strong>travaux personnels </strong>
           significatifs.
           <br />
-          Chacun de ces <strong>projets</strong> a représenté pour moi un défi
-          stimulant et enrichissant, et j'espère qu'ils vous inspireront autant
-          qu'ils ont été pour moi une source d'apprentissage.
+          Certains projets ont été réalisés durant ma{" "}
+          <strong>formation OpenClassrooms</strong>. Bien qu'ils soient
+          fonctionnels, certaines interactions peuvent manquer, telles que des
+          boutons sans action au clic non requis dans le projet.
+          <br />
+          Ils demeurent cependant représentatifs de mes compétences et de mon
+          apprentissage en développement web.
         </p>
         <div className="projects-container">
           {Array.isArray(projectsList?.projects) &&

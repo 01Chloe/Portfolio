@@ -58,12 +58,12 @@ const About = () => {
         </p>
         <p>
           Explorez mon portfolio et <strong>contactez-moi</strong> si vous
-          souhaitez discuter de collaborations potentielles ou des projets
-          stimulants à réaliser ensemble !
+          souhaitez discuter de collaborations ou des projets stimulants à
+          réaliser ensemble !
           <br />
           Je suis disponible sur <strong>Clermont-Ferrand</strong> et ses
           alentours et aussi en
-          <strong> full remote dans toute la France</strong>. Je serais ravi
+          <strong> full remote dans toute la France</strong>. Je serai ravie
           d'échanger avec vous sur de nouvelles opportunités professionnelles.
         </p>
         <button className="btn-more-infos">

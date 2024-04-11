@@ -19,6 +19,9 @@ const About = () => {
       <section className="section-typewriter">
         <Writer />
       </section>
+      <div className="my-logo-overlay">
+        <div className="overlay"></div>
+      </div>
       <section className={isAboutOpen ? "section-about open" : "section-about"}>
         <h2>À propos</h2>
         <p>

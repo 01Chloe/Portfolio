@@ -16,6 +16,44 @@
     margin-bottom: 15px;
   }
 }
+.my-logo-overlay {
+  position: relative;
+  display: block;
+  margin: auto;
+  background-image: url("/logo.png");
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  filter: drop-shadow(0 5px 5px rgba(0, 0, 0, 0.5));
+  overflow: hidden;
+  .overlay {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    z-index: 3;
+    width: 5px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5),
+      0 0 20px 0 rgba(255, 255, 255, 0.3), 2px 0 3px 0 rgba(255, 255, 255, 0.5),
+      -2px 0 3px 0 rgba(255, 255, 255, 0.5);
+    transform: rotate(-45deg);
+    animation: overlayAnim 7s ease-in-out infinite;
+  }
+}
+@keyframes overlayAnim {
+  0% {
+    translate: 0;
+  }
+  15% {
+    translate: 180px;
+  }
+  100% {
+    translate: 180px;
+  }
+}
 .section-about {
   max-height: 350px;
   overflow: hidden;
@@ -94,6 +132,7 @@
     display: grid;
     grid-template-areas:
       "write write"
+      "about mylogo"
       "about findme"
       "about contact";
     column-gap: 30px;
@@ -115,12 +154,17 @@
       grid-area: contact;
       max-height: 42px;
     }
+    .my-logo-overlay {
+      grid-area: mylogo;
+    }
     .section-contact {
       grid-area: findme;
-      margin-top: auto;
+      h2 {
+        margin-bottom: 30px;
+      }
       .about-logo-container {
         flex-direction: column;
-        gap: 15px;
+        gap: 30px;
       }
     }
   }
@@ -142,6 +186,10 @@
       p {
         font-size: 1.125rem;
       }
+    }
+    .my-logo-overlay {
+      width: 130px;
+      height: 130px;
     }
     .section-contact {
       padding: 60px;

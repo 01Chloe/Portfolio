@@ -4,11 +4,11 @@
       "id": 1,
       "name": "ArgentBank",
       "desc": "Avec ce projet, réalisé dans le cadre de ma formation, j'ai travaillé sur le développement front-end d'une application bancaire en utilisant React et Redux pour créer une interface utilisateur. \nMon rôle principal était d'intégrer le front-end avec le back-end via des appels API, assurant une interaction fluide et sécurisée avec les données. \nJ'ai développé un tableau de bord interactif en utilisant React. \nL'utilisation de Redux a permis une gestion efficace de l'état de l'application, tandis que j'ai utilisé Swagger pour documenter les points d'accès de l'API, favorisant la collaboration et assurant la conformité avec les spécifications. \nCe projet a consolidé mes compétences dans le développement d'interfaces utilisateur dynamiques et performantes, tout en maintenant une architecture solide et évolutive.",
-      "cover": "/img/pic/ArgentBank-desktop.webp",
+      "cover": "/img/pic/argentbank-desktop.webp",
       "images": [
-        "/img/pic/ArgentBank-mobile.PNG",
-        "/img/pic/ArgentBank-mobile2.PNG",
-        "/img/pic/ArgentBank-mobile3.PNG"
+        "/img/pic/argentbank-mobile.webp",
+        "/img/pic/argentbank-mobile2.webp",
+        "/img/pic/argentbank-mobile3.webp"
       ],
       "skills": ["React", "Redux", "Swagger"],
       "date": "Février 2024",
@@ -22,10 +22,11 @@
       "id": 2,
       "name": "OhMyFood",
       "desc": "Dans le cadre de ma formation, j'ai réalisé ce projet qui m'a permis de concevoir l'interface mobile-first d'un site web pour une start-up en pleine croissance. \nEn utilisant Sass, j'ai pu organiser efficacement les styles, assurant ainsi une maintenance simplifiée à long terme. \nL'objectif principal était d'intégrer des animations CSS pour enrichir l'expérience utilisateur en lui apportant une dimension interactive et visuelle. \nLa gestion des versions avec Git et GitHub a été essentielle pour suivre précisément les modifications tout au long du processus de développement. \nCe projet démontre ma capacité à créer des interfaces web réactives et esthétiques, en mettant en avant mon engagement à perfectionner l'interaction utilisateur à travers l'ajout d'animations.",
-      "cover": "/img/pic/OhMyFood-desktop.webp",
+      "cover": "/img/pic/ohmyfood-desktop.webp",
       "images": [
-        "/img/pic/OhMyFood-mobile.PNG",
-        "/img/pic/OhMyFood-mobile2.PNG"
+        "/img/pic/ohmyfood-mobile.webp",
+        "/img/pic/ohmyfood-mobile2.webp",
+        "/img/pic/ohmyfood-desktop2.webp"
       ],
       "skills": ["HTML", "SASS"],
       "date": "Septembre 2023",
@@ -40,11 +41,11 @@
       "id": 3,
       "name": "Kasa",
       "desc": "Dans ce projet réalisé pour ma formation, j'ai développé le front-end d'une application en utilisant React et React Router. \nMon objectif était de créer une expérience utilisateur moderne et réactive basée sur des maquettes fournies. \nCe projet a été axé exclusivement sur le développement front-end, en utilisant des données simulées provenant d'un fichier JSON. \nCe site présente des logements pour de la location entre particuliers. \nGrâce à React, j'ai pu créer des composants réutilisables, simplifiant ainsi le développement et améliorant la maintenabilité du code. \nJ'ai utilisé React Router pour créer des routes vers les différents logements, offrant une navigation fluide et une expérience utilisateur optimale. \nCe projet démontre mon expertise à utiliser React pour créer des applications web dynamiques, en mettant en avant ma capacité à développer des composants réutilisables et à mettre en place un routage efficace.",
-      "cover": "/img/pic/Kasa-desktop.webp",
+      "cover": "/img/pic/kasa-desktop.webp",
       "images": [
-        "/img/pic/Kasa-mobile.PNG",
-        "/img/pic/Kasa-mobile2.PNG",
-        "/img/pic/Kasa-desktop2.PNG"
+        "/img/pic/kasa-mobile.webp",
+        "/img/pic/kasa-mobile2.webp",
+        "/img/pic/kasa-desktop2.webp"
       ],
       "skills": ["HTML", "SASS", "React"],
       "date": "Décembre 2023",
@@ -59,10 +60,11 @@
       "id": 4,
       "name": "SpaceTourism",
       "desc": "Dans le cadre d'un projet personnel, j'ai relevé le défi proposé par le site Frontend Mentor en mettant à profit mes compétences en HTML, SASS et JavaScript. \nMon objectif principal était de reproduire fidèlement la maquette fournie. \nJ'ai structuré le contenu de chaque page en utilisant HTML selon les spécifications du design, tandis que SASS m'a permis d'organiser efficacement les styles en me basant sur les palettes de couleurs et les typographies fournies. \nL'ajout de fonctionnalités interactives telles que des animations et des transitions avec JavaScript ont rendu le site plus dynamique. \nCe défi m'a permis de consolider mes compétences en développement front-end en travaillant sur un projet réaliste et en relevant les défis liés à la conversion d'une maquette en un site web pleinement fonctionnel. \nLe résultat final est un site web qui reflète fidèlement le design proposé, tout en offrant une expérience utilisateur immersive et captivante.",
-      "cover": "/img/pic/SpaceTourism-desktop.webp",
+      "cover": "/img/pic/spacetourism-desktop.webp",
       "images": [
-        "/img/pic/SpaceTourism-mobile.PNG",
-        "/img/pic/SpaceTourism-mobile2.PNG"
+        "/img/pic/spacetourism-mobile.webp",
+        "/img/pic/spacetourism-mobile2.webp",
+        "/img/pic/spacetourism-desktop2.webp"
       ],
       "skills": ["HTML", "SASS", "JS"],
       "date": "Mars 2023",
@@ -77,10 +79,10 @@
       "id": 5,
       "name": "Sophie Bluel",
       "desc": "Pour ce projet réalisé dans le cadre de ma formation, j'ai conçu une page web dynamique pour le site internet d'une architecte d'intérieur en utilisant JavaScript. \nJ'ai mis en place une communication avec une API pour récupérer et afficher dynamiquement les projets réalisés par cette architecte. \nUne partie importante de ce projet a été la création d'une interface de connexion pour l'administrateur du site. Cette interface lui permet de se connecter de manière sécurisée afin d'accéder à un espace d'administration où il peut gérer le contenu du site. \nJ'ai également implémenté une modale qui permet à l'administrateur d'ajouter facilement de nouveaux projets, aux contenus déjà existants. \nCe projet démontre ma capacité à concevoir des interfaces web fonctionnelles tout en intégrant des fonctionnalités avancées telles que l'authentification utilisateur et la manipulation de données à partir d'une API.",
-      "cover": "/img/pic/SophieBluel-desktop.webp",
+      "cover": "/img/pic/sophiebluel-desktop.webp",
       "images": [
-        "/img/pic/SophieBluel-desktop2.PNG",
-        "/img/pic/SophieBluel-desktop3.PNG"
+        "/img/pic/sophiebluel-desktop2.webp",
+        "/img/pic/sophiebluel-desktop3.webp"
       ],
       "skills": ["HTML", "CSS", "JS", "Postman"],
       "date": "Octobre 2023",
@@ -94,8 +96,12 @@
       "id": 6,
       "name": "Booki",
       "desc": "Dans ce projet de formation, j'ai créé la page d'accueil d'une agence de voyage en utilisant HTML et CSS. \nMon objectif principal était d'intégrer une interface responsive en me basant sur les maquettes Figma pour mobile, tablette et desktop. \nCette expérience m'a permis de développer mes compétences en design responsive et m'a donné une compréhension approfondie de la structuration et de la stylisation du code pour répondre aux exigences de design. \nCe projet m'a fourni des bases solides en me permettant de maîtriser l'intégration précise des maquettes tout en configurant un environnement de développement efficace.",
-      "cover": "/img/pic/Booki-desktop.webp",
-      "images": ["/img/pic/Booki-mobile.PNG", "/img/pic/Booki-mobile2.PNG"],
+      "cover": "/img/pic/booki-desktop.webp",
+      "images": [
+        "/img/pic/booki-mobile.webp",
+        "/img/pic/booki-mobile2.webp",
+        "/img/pic/booki-desktop2.webp"
+      ],
       "skills": ["HTML", "CSS"],
       "date": "Août 2023",
       "links": [

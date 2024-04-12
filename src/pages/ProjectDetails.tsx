@@ -123,7 +123,11 @@ const ProjectDetails = () => {
             src={img}
             alt={projectDetails.name}
             key={index}
-            className="project-img"
+            className={
+              img.includes("desktop")
+                ? "project-img img-desktop"
+                : "project-img"
+            }
           />
         ))}
       </div>

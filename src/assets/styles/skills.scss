@@ -10,29 +10,53 @@
 }
 .skills-infos {
   @include mix.styledContainer;
-  background-color: vars.$thirdColor;
+  background-color: vars.$mainColor;
+  margin: 15px 0;
+  h3 {
+    @include mix.title;
+    margin-bottom: 15px;
+  }
+  .more-skills {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    .more-skill {
+      font-weight: 300;
+      margin: 0 15px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: skillAnim 0.5s ease-out forwards;
+    }
+  }
 }
-
+@keyframes skillAnim {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 @media screen and (min-width: vars.$desktop) {
   .skills-title,
   .skills-infos {
     margin: 30px 0;
   }
 }
-
 @media screen and (min-width: vars.$largeDesktop) {
-  .skills-title,
-  .skills-infos {
+  .skills-title {
     margin: 60px 0;
     padding: 30px;
-  }
-  .skills-title {
     h2 {
       font-size: 2rem;
     }
   }
   .skills-infos {
-    p {
+    padding: 30px;
+    margin: 60px 120px;
+    h3 {
+      font-size: 1.5rem;
+    }
+    .more-skill {
       font-size: 1.125rem;
     }
   }

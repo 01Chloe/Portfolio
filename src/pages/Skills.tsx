@@ -15,10 +15,12 @@ const Skills = () => {
       <SkillsGroup title="Gestion de version" data={1} />
       <SkillsGroup title="Outils" data={2} />
       <div className="skills-infos">
-        <p>
-          Connaissances en SEO, tests unitaires et d'intégrations (Jest, React
-          Testing Library)
-        </p>
+        <h3>Savoir-faire additionnel</h3>
+        <ul className="more-skills">
+          <li className="more-skill">SEO</li>
+          <li className="more-skill">Jest</li>
+          <li className="more-skill">React Testing Library</li>
+        </ul>
       </div>
     </main>
   )

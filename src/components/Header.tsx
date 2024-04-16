@@ -50,7 +50,7 @@ const Header = () => {
       ></div>
       <div
         className={isClicked ? "big-cursor" : "big-cursor hide"}
-        style={{ left: `${cursorX - 10}px`, top: `${cursorY - 10}px` }}
+        style={{ left: `${cursorX - 15}px`, top: `${cursorY - 15}px` }}
       ></div>
 
       <h1 className="sr-only">Allier Chloé - Développeur Web - Portfolio</h1>

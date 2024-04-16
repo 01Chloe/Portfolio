@@ -26,8 +26,7 @@ const About = () => {
         <h2>À propos</h2>
         <p>
           Je suis <strong>Chloé Allier, développeuse web front-end</strong>{" "}
-          passionnée par la création d'interfaces en ligne immersives et
-          intuitives.
+          passionnée par la création d'interfaces en ligne immersives.
           <br />
           Mon parcours dans le monde du développement web a commencé de façon
           <strong> autodidacte</strong>, poussée par une fascination pour la
@@ -35,8 +34,8 @@ const About = () => {
           pour offrir des expériences uniques.
         </p>
         <p>
-          Dans ma quête pour approfondir mes compétences et suivre les
-          meilleures pratiques de l'industrie, j'ai entrepris une formation de
+          Pour approfondir mes compétences et suivre les meilleures pratiques de
+          l'industrie, j'ai entrepris une formation de
           <strong> développeur intégrateur web chez OpenClassrooms</strong>,
           certifiante et équivalente à un niveau <strong>bac+2</strong>.
         </p>

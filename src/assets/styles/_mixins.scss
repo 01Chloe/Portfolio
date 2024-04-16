@@ -43,7 +43,6 @@
 
 @mixin customCursor {
   background-color: vars.$secondaryColor;
-  border-radius: 50%;
   position: fixed;
   pointer-events: none;
   z-index: 999;

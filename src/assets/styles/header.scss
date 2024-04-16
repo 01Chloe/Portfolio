@@ -5,31 +5,9 @@ header {
   background-color: vars.$thirdColor;
   @include mix.styledContainer;
   position: relative;
-  cursor: none;
-  .cursor {
-    @include mix.customCursor;
-    opacity: 1;
-    width: 15px;
-    height: 15px;
-    border-radius: 10% 90% 50% 50% / 10% 50% 50% 90%;
-    transition: opacity 0.3s ease-out;
-    box-shadow: 0 0 10px 0 vars.$lightColor;
-    &.hide {
-      opacity: 0;
-    }
-  }
+  .cursor,
   .big-cursor {
-    @include mix.customCursor;
-    opacity: 0.3;
-    transform: scale(1);
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
-    &.hide {
-      opacity: 0;
-      transform: scale(0);
-    }
+    opacity: 0;
   }
   .sr-only {
     border: 0 !important;
@@ -49,6 +27,7 @@ header {
     height: 25px;
     margin-left: auto;
     @include mix.flexCenter;
+    cursor: pointer;
     &-line {
       transition: transform 0.3s ease-out, opacity 0.3s ease-out,
         transform-origin 0.3s ease-out;
@@ -73,7 +52,7 @@ header {
       color: vars.$veryLightColor;
       text-decoration: none;
       text-transform: uppercase;
-      cursor: none;
+      cursor: pointer;
       &:not(:last-child) {
         margin-bottom: 10px;
       }
@@ -120,6 +99,32 @@ header.open {
 @media screen and (min-width: vars.$desktop) {
   header {
     height: 55px;
+    cursor: none;
+    .cursor {
+      @include mix.customCursor;
+      opacity: 1;
+      width: 15px;
+      height: 15px;
+      border-radius: 10% 90% 50% 50% / 10% 50% 50% 90%;
+      transition: opacity 0.3s ease-out;
+      box-shadow: 0 0 10px 0 vars.$lightColor;
+      &.hide {
+        opacity: 0;
+      }
+    }
+    .big-cursor {
+      @include mix.customCursor;
+      opacity: 0.3;
+      transform: scale(1);
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+      &.hide {
+        opacity: 0;
+        transform: scale(0);
+      }
+    }
     .menu {
       display: none;
     }
@@ -132,6 +137,9 @@ header.open {
       visibility: visible;
       max-height: auto;
       transition: none;
+      a {
+        cursor: none;
+      }
     }
   }
 }

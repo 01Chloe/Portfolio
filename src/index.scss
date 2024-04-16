@@ -36,11 +36,11 @@ main {
   background-color: vars.$thirdColor;
 }
 ::-webkit-scrollbar-thumb {
-  background-color: darken(vars.$secondaryColor, 23%);
+  background-color: vars.$secondaryColor;
   border-radius: 20px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background-color: darken(vars.$secondaryColor, 25%);
+  background-color: darken(vars.$secondaryColor, 5%);
 }
 @media screen and (min-width: vars.$tablet) {
   #root {

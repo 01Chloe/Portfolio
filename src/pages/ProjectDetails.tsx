@@ -98,17 +98,23 @@ const ProjectDetails = () => {
           (link: { github?: string; demo?: string }, index: number) => (
             <div className="projects-links-container" key={index}>
               <a
-                href={link.github}
+                href={link.github ? link.github : "#"}
                 target="_blank"
-                aria-label={`Voir le code du site ${projectDetails.name}`}
+                aria-label={
+                  link.github
+                    ? `Voir le code du site ${projectDetails.name}`
+                    : ""
+                }
                 className={link.github ? "link" : "link link-disabled"}
               >
                 GitHub
               </a>
               <a
-                href={link.demo}
+                href={link.demo ? link.demo : "#"}
                 target="_blank"
-                aria-label={`Visiter le site ${projectDetails.name}`}
+                aria-label={
+                  link.demo ? `Visiter le site ${projectDetails.name}` : ""
+                }
                 className={link.demo ? "link" : "link link-disabled"}
               >
                 Visiter

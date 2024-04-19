@@ -82,10 +82,6 @@
         text-decoration: none;
         color: vars.$thirdColor;
         font-weight: 600;
-        transition: scale 0.3s ease-out;
-        &:hover {
-          scale: 1.05;
-        }
         &.link-disabled {
           pointer-events: none !important;
           opacity: 0.3 !important;
@@ -133,14 +129,14 @@
       color: vars.$veryLightColor;
       font-family: vars.$fontFam;
       font-size: 0.875rem;
-      transition: scale 0.3s ease-out;
+      transition: transform 0.3s ease-out;
       &:disabled {
         opacity: 0.3;
         pointer-events: none;
         cursor: auto;
       }
       &:hover {
-        scale: 1.05;
+        transform: scale(1.05);
       }
     }
   }

@@ -17,13 +17,13 @@
 }
 @keyframes contactBtnAnim {
   30% {
-    rotate: 5deg;
+    transform: rotate(5deg);
   }
   50% {
-    rotate: -5deg;
+    transform: rotate(-5deg);
   }
   70% {
-    rotate: 5deg;
+    transform: rotate(5deg);
   }
 }
 

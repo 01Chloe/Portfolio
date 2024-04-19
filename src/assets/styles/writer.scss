@@ -2,6 +2,11 @@
 
 .typewriter {
   font-family: vars.$titleFontFam;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   text-align: center;
+}
+@media screen and (min-width: vars.$tablet) {
+  .typewriter {
+    font-size: 1.5rem;
+  }
 }

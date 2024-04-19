@@ -14,7 +14,7 @@
   text-decoration: none;
   color: vars.$veryLightColor;
   &:hover .project-cover {
-    scale: 1.05;
+    transform: scale(1.05);
   }
   .project-cover {
     position: absolute;
@@ -23,7 +23,7 @@
     height: 80%;
     object-fit: cover;
     object-position: top;
-    transition: scale 0.3s ease-out;
+    transition: transform 0.3s ease-out;
   }
   .project-title {
     position: absolute;

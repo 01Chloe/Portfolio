@@ -39,19 +39,18 @@
     box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.5),
       0 0 20px 0 rgba(255, 255, 255, 0.3), 2px 0 3px 0 rgba(255, 255, 255, 0.5),
       -2px 0 3px 0 rgba(255, 255, 255, 0.5);
-    transform: rotate(-45deg);
     animation: overlayAnim 7s ease-in-out 0.5s infinite;
   }
 }
 @keyframes overlayAnim {
   0% {
-    translate: 0;
+    transform: rotate(-45deg) translate(0, 35px);
   }
   10% {
-    translate: 180px;
+    transform: rotate(-45deg) translate(100px, 35px);
   }
   100% {
-    translate: 180px;
+    transform: rotate(-45deg) translate(100px, 35px);
   }
 }
 .section-about {

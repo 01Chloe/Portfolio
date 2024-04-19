@@ -16,8 +16,12 @@ type ProjectProps = {
 
 const Project = ({ item }: ProjectProps) => {
   return (
-    <Link to={"/project/" + item.id} className="project-container">
-      <img src={item.cover} alt={item.name} className="project-cover" />
+    <Link
+      to={"/project/" + item.id}
+      className="project-container"
+      aria-label={`Voir le detail du projet ${item.name}`}
+    >
+      <img src={item.cover} alt="" className="project-cover" />
       <div className="project-title">
         <h3>{item.name}</h3>
       </div>

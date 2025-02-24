@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer>
       <p>
-        © 2024
+        © 2024-2025
         <br />
         Tous droits réservés
         <br />
